@@ -44,8 +44,9 @@ extern uint32_t SystemCoreClock;
 
 /* Private defines -----------------------------------------------------------*/
 #define SWO_USART
+
 // _EREG_ Flags    
-#define _BT6F_    0 // Basic Timer7 Flag
+#define _BT6F_    0 // Basic Timer6 Flag
 // #define _RTCALAF_ 1 // RTC Alarm A Flag
 // #define _RTCALBF_ 2 // RTC Alarm B Flag
 // #define _RTWUPF_  3 // RTC Wake Up Flag

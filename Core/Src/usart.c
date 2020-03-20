@@ -30,6 +30,7 @@ static uint8_t rxBuf[32];
 void USART1_Init(void) {
   uint32_t baudRate = 115200;
 
+  /* Enable GPIO alternative #1 on hight speed */
   USART_Port->MODER   |= ((_AF << (TX_Pin_Pos * 2U)) | (_AF << (RX_Pin_Pos * 2U)));
   USART_Port->OSPEEDR |= ((_HS << (TX_Pin_Pos * 2U)) | (_HS << (RX_Pin_Pos * 2U)));
   USART_Port->AFR[1]  |= ((1 << ((TX_Pin_Pos - 8) * 4U)) | (1 << ((RX_Pin_Pos - 8) * 4U)));
